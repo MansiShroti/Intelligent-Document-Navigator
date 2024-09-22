@@ -1,0 +1,12 @@
+version: "3"
+services:
+  navigator:
+    image: navigator:2.0
+    ports:
+      - 8000:3000
+    environment:
+      - API_KEY=<Your API Key>
+      - MODE=tes
+      - STATIC=/opt/source-code/static
+      - UPLOAD_DIR=/opt/source-code/uploads
+    
